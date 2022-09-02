@@ -1,2 +1,2 @@
 # hptest
-![/index.html]あああ
+![/index.html](/index.html)
