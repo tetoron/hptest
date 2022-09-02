@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@media screen and (max-width: 520px) {
+    
+    .inner, #wrapper {
+        width: 95%;
+        max-width: 95%;
+    }
+
+    #innerNavi {
+        margin-bottom: 16px;
+    }
+
+    #menu-btn {
+        display: block;
+        position: relative;
+        border: solid 1px gray;
+        padding-left: 16px;
+        font-size: 18px;
+        font-weight: lighter;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }    
+
+    menu {
+        display: none;
+        margin: 0;
+        border: solid 1px gray;
+        border-top: none;
+    }
+
+    menu li {
+        border: none;
+        border-bottom: dashed 1px gray;
+    }
+
+    menu li:last-child {
+        border: none;
+        border-bottom: none;
+    }
+
+    menu li a {
+        display: block;
+        padding: 0 0 0 16px;
+    }
+
+    #post {
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
