@@ -220,11 +220,11 @@ section a:hover {
 /* Img */
 #topImg {
     margin-bottom: 16px;
-    border: solid 1px gray;
 }
 
 #topImg img {
     filter: grayscale(100%);
+    border: solid 1px gray;
 }
 
 img {
