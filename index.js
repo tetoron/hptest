@@ -9,23 +9,11 @@ $(function() {
         }
     });
 
-    $("#2022").on("click", function(){
-        if($("#2022").hasClass("active")){
-            $(this).removeClass("active");
-            $('.subLog2022').slideUp();
-        }else{
+    $(".logLink").each(function(){
+        $(this).on("click", function(){
             $(this).toggleClass("active");
-            $('.subLog2022').slideDown();
-        }
-    });
-
-    $("#2021").on("click", function(){
-        if($("#2021").hasClass("active")){
-            $(this).removeClass("active");
-            $('.subLog2021').slideUp();
-        }else{
-            $(this).toggleClass("active");
-            $('.subLog2021').slideDown();
-        }
+            $("+.subLog", this).slideToggle();
+            return false;
+        });
     });
 })

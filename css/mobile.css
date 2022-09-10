@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 @media screen and (max-width: 520px) {
-    
-    .inner, #wrapper {
+
+    .inner,
+    #wrapper {
         width: 95%;
         max-width: 95%;
     }
@@ -21,7 +22,7 @@
         font-family: 'Montserrat Alternates', sans-serif;
     }
 
-    #menu-btn:after {
+    #menu-btn::after {
         display: inline-block;
         content: "+";
         height: 27px;
@@ -33,6 +34,10 @@
         right: 0;
         top: 0;
         font-size: 25px;
+    }
+
+    #menu-btn.active::after {
+        content: "−";
     }
 
     menu {
