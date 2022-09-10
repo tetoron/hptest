@@ -27,6 +27,8 @@
         height: 27px;
         width: 27px;
         line-height: 27px;
+        text-align: center;
+        border-left: solid 1px gray;
     }
 
     menu {
