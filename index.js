@@ -5,7 +5,7 @@ $(function() {
             $("menu").slideUp();
         }else{
             $(this).toggleClass("active");
-            $(this).css("content", "-")
+            $("#menu-btn:after").css("content", "-")
             $("menu").slideDown();
         }
     });
