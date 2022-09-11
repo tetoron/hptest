@@ -49,6 +49,10 @@ section {
     font-size: 12px;
 }
 
+#lastDiary {
+    border-bottom: none;
+}
+
 aside {
     float: left;
     width: 30%;
@@ -146,6 +150,18 @@ h1 {
 }
 
 /* Log */
+#log .logList {
+    border-bottom: solid 1px gray;
+}
+
+#log .logList:last-of-type {
+    border-bottom: none;
+}
+
+.logList {
+    border-bottom-style: solid;
+}
+
 .logLink {
     position: relative;
 }
@@ -160,7 +176,7 @@ h1 {
     top: 0;
     right: 0;
     text-align: center;
-    background-color: whitesmoke;
+    border-left: solid 1px gray;
 }
 
 .logLink.active::after {
@@ -175,6 +191,7 @@ ul .subLog {
     display: none;
     height: 87px;
     overflow: auto;
+    border-top: solid 1px gray;
 }
 
 .subLog::-webkit-scrollbar {
@@ -196,15 +213,11 @@ ul .subLog {
     overflow: visible;
 }
 
-.subLog li:first-child {
-    border-top: dashed 1px gray;
-}
-
 .subLog li {
     border-bottom: dashed 1px gray;
 }
 
-.subLog li:last-child {
+.subLog li:last-of-type {
     border-bottom: none;
 }
 
